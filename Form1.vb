@@ -41,4 +41,10 @@
         F.Show()
 
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim F As New FRM_DIEGO
+        F.Show()
+
+    End Sub
 End Class
