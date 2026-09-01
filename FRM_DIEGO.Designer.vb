@@ -27,19 +27,22 @@ Partial Class FRM_DIEGO
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(151, 91)
+        Button1.Font = New Font("Segoe UI", 20F)
+        Button1.Location = New Point(195, 67)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(368, 123)
+        Button1.Size = New Size(445, 117)
         Button1.TabIndex = 0
-        Button1.Text = "hola"
+        Button1.Text = "HOLA"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' FRM_DIEGO
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 600)
         Controls.Add(Button1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "FRM_DIEGO"
         Text = "FRM_DIEGO"
         ResumeLayout(False)
