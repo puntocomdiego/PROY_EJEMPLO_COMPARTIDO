@@ -31,13 +31,14 @@ Partial Class FRM_TABA
         Button1 = New Button()
         Timer2 = New Timer(components)
         Button2 = New Button()
+        Button3 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(12, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(265, 21)
@@ -76,7 +77,7 @@ Partial Class FRM_TABA
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(689, 415)
+        Button1.Location = New Point(565, 414)
         Button1.Name = "Button1"
         Button1.Size = New Size(99, 23)
         Button1.TabIndex = 4
@@ -97,12 +98,22 @@ Partial Class FRM_TABA
         Button2.Text = "Hola"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(668, 369)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(120, 70)
+        Button3.TabIndex = 6
+        Button3.Text = "Abandonarme como la persona despreciable que eres"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' FRM_TABA
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(800, 450)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label2)
@@ -124,4 +135,5 @@ Partial Class FRM_TABA
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
