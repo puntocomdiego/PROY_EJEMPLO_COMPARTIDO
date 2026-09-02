@@ -15,7 +15,6 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
         Button1.BackColor = Color.Yellow
-        Button1.ForeColor = Color.Black
 
     End Sub
 End Class
