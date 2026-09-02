@@ -29,7 +29,7 @@ Partial Class FRM_DAHIANA
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(316, 76)
+        Button1.Location = New Point(322, 55)
         Button1.Name = "Button1"
         Button1.Size = New Size(150, 67)
         Button1.TabIndex = 0
@@ -38,7 +38,7 @@ Partial Class FRM_DAHIANA
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(474, 216)
+        Button2.Location = New Point(515, 196)
         Button2.Name = "Button2"
         Button2.Size = New Size(150, 67)
         Button2.TabIndex = 1
@@ -47,7 +47,7 @@ Partial Class FRM_DAHIANA
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(121, 216)
+        Button3.Location = New Point(114, 196)
         Button3.Name = "Button3"
         Button3.Size = New Size(150, 67)
         Button3.TabIndex = 2
