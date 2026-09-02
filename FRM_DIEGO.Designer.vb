@@ -28,7 +28,7 @@ Partial Class FRM_DIEGO
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 20F)
-        Button1.Location = New Point(163, 80)
+        Button1.Location = New Point(215, 67)
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
         Button1.Size = New Size(445, 117)
