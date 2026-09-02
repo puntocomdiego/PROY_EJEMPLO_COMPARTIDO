@@ -22,9 +22,29 @@ Partial Class FRM_MATEO
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "FRM_MATEO"
+        Button1 = New Button()
+        SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Segoe UI", 12F)
+        Button1.Location = New Point(253, 84)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(260, 94)
+        Button1.TabIndex = 0
+        Button1.Text = "Boton Prueba"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' FRM_MATEO
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
+        Name = "FRM_MATEO"
+        Text = "FRM_MATEO"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Button1 As Button
 End Class
