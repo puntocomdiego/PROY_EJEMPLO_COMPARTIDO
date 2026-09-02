@@ -1,20 +1,19 @@
 ﻿Public Class FRM_DAHIANA
+
+    ' ============================================================
+    '  TP: cada boton pinta pnlLuz del color del semaforo.
+    '  Pista: pnlLuz.BackColor = Color.Red / Color.Yellow / Color.Green
+    ' ============================================================
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Button2.BackColor = Color.Blue
-        Button2.ForeColor = Color.White
-
+        ' TODO (alumno): pintar pnlLuz de ROJO
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-        Button3.BackColor = Color.Red
-        Button2.ForeColor = Color.White
+        ' TODO (alumno): pintar pnlLuz de AMARILLO
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
-        Button1.BackColor = Color.Yellow
-
+        ' TODO (alumno): pintar pnlLuz de VERDE
     End Sub
 End Class

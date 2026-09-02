@@ -2,7 +2,6 @@
 Partial Class FRM_HESCTOR
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,17 +13,89 @@ Partial Class FRM_HESCTOR
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "FRM_HESCTOR"
+        lblConsigna = New Label()
+        lblEntrada = New Label()
+        txtEntrada = New TextBox()
+        btnAccion = New Button()
+        lblResultado = New Label()
+        SuspendLayout()
+        ' 
+        ' lblConsigna
+        ' 
+        lblConsigna.BackColor = Color.LightYellow
+        lblConsigna.BorderStyle = BorderStyle.FixedSingle
+        lblConsigna.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular)
+        lblConsigna.Location = New Point(12, 12)
+        lblConsigna.Name = "lblConsigna"
+        lblConsigna.Padding = New Padding(8)
+        lblConsigna.Size = New Size(776, 135)
+        lblConsigna.TabIndex = 0
+        lblConsigna.Text = "TRABAJO PRACTICO - Mayor o Menor de Edad" & vbCrLf & vbCrLf &
+            "El usuario ingresa su edad. Al presionar el boton, mostrar si es MAYOR DE EDAD (18 o mas)" & vbCrLf &
+            "o MENOR DE EDAD. Pintar el resultado de verde si es mayor y de rojo si es menor." & vbCrLf &
+            "Validar que la edad sea un numero valido entre 0 y 120." & vbCrLf &
+            "Pista: usa If edad >= 18 Then ... y la propiedad lblResultado.ForeColor."
+        ' 
+        ' lblEntrada
+        ' 
+        lblEntrada.AutoSize = True
+        lblEntrada.Font = New Font("Segoe UI", 11.25F)
+        lblEntrada.Location = New Point(90, 190)
+        lblEntrada.Name = "lblEntrada"
+        lblEntrada.Size = New Size(120, 20)
+        lblEntrada.TabIndex = 1
+        lblEntrada.Text = "Edad:"
+        ' 
+        ' txtEntrada
+        ' 
+        txtEntrada.Font = New Font("Segoe UI", 11.25F)
+        txtEntrada.Location = New Point(320, 187)
+        txtEntrada.Name = "txtEntrada"
+        txtEntrada.Size = New Size(200, 27)
+        txtEntrada.TabIndex = 2
+        ' 
+        ' btnAccion
+        ' 
+        btnAccion.Font = New Font("Segoe UI", 11.25F)
+        btnAccion.Location = New Point(320, 240)
+        btnAccion.Name = "btnAccion"
+        btnAccion.Size = New Size(200, 45)
+        btnAccion.TabIndex = 3
+        btnAccion.Text = "VERIFICAR"
+        btnAccion.UseVisualStyleBackColor = True
+        ' 
+        ' lblResultado
+        ' 
+        lblResultado.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold)
+        lblResultado.Location = New Point(90, 310)
+        lblResultado.Name = "lblResultado"
+        lblResultado.Size = New Size(620, 40)
+        lblResultado.TabIndex = 4
+        lblResultado.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' FRM_HESCTOR
+        ' 
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        ClientSize = New System.Drawing.Size(800, 450)
+        Controls.Add(lblResultado)
+        Controls.Add(btnAccion)
+        Controls.Add(txtEntrada)
+        Controls.Add(lblEntrada)
+        Controls.Add(lblConsigna)
+        Name = "FRM_HESCTOR"
+        Text = "FRM_HESCTOR - Mayor de Edad"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents lblConsigna As Label
+    Friend WithEvents lblEntrada As Label
+    Friend WithEvents txtEntrada As TextBox
+    Friend WithEvents btnAccion As Button
+    Friend WithEvents lblResultado As Label
 End Class

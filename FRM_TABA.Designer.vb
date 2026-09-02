@@ -23,6 +23,7 @@ Partial Class FRM_TABA
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        lblConsigna = New Label()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         TextBox1 = New TextBox()
@@ -44,6 +45,21 @@ Partial Class FRM_TABA
         Label1.Size = New Size(265, 21)
         Label1.TabIndex = 0
         Label1.Text = "Bienvenido al proyecto de Tabaré"
+        ' 
+        ' lblConsigna
+        ' 
+        lblConsigna.BackColor = Color.LightYellow
+        lblConsigna.BorderStyle = BorderStyle.FixedSingle
+        lblConsigna.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular)
+        lblConsigna.Location = New Point(12, 40)
+        lblConsigna.Name = "lblConsigna"
+        lblConsigna.Padding = New Padding(8)
+        lblConsigna.Size = New Size(770, 100)
+        lblConsigna.TabIndex = 7
+        lblConsigna.Text = "TRABAJO PRACTICO - Control de Velocidad" & vbCrLf & vbCrLf &
+            "Tu animacion funciona con el valor de ""Velocidad"". Agregale una VALIDACION al Timer1_Tick:" & vbCrLf &
+            "si el TextBox esta vacio o no es un numero, la velocidad debe tomarse como 1 (no debe romperse)." & vbCrLf &
+            "Extra: no permitir velocidades mayores a 20 ni negativas."
         ' 
         ' PictureBox1
         ' 
@@ -115,6 +131,7 @@ Partial Class FRM_TABA
         ClientSize = New Size(800, 450)
         Controls.Add(Button3)
         Controls.Add(Button2)
+        Controls.Add(lblConsigna)
         Controls.Add(Button1)
         Controls.Add(Label2)
         Controls.Add(TextBox1)
@@ -128,6 +145,7 @@ Partial Class FRM_TABA
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents lblConsigna As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Timer1 As Timer
