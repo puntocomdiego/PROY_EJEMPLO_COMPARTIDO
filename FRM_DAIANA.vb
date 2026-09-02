@@ -1,4 +1,4 @@
-﻿Public Class FRM_DAHIANA
+﻿Public Class FRM_DAIANA
 
     ' ============================================================
     '  TP: cada boton pinta pnlLuz del color del semaforo.

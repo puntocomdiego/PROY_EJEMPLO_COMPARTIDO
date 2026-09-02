@@ -60,7 +60,7 @@
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        Dim F As New FRM_DAHIANA
+        Dim F As New FRM_DAIANA
         F.Show()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FRM_DAHIANA
+Partial Class FRM_DAIANA
     Inherits System.Windows.Forms.Form
 
     <System.Diagnostics.DebuggerNonUserCode()> _
