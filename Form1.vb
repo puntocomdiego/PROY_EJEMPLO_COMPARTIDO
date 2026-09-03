@@ -63,4 +63,8 @@
         Dim F As New FRM_DAIANA
         F.Show()
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
