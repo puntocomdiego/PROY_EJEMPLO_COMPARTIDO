@@ -25,11 +25,13 @@ Partial Class FRM_DANIEL
         Button2 = New Button()
         TextBox1 = New TextBox()
         Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
         SuspendLayout()
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(110, 76)
+        Button2.Location = New Point(318, 222)
         Button2.Margin = New Padding(3, 2, 3, 2)
         Button2.Name = "Button2"
         Button2.Size = New Size(135, 41)
@@ -39,7 +41,7 @@ Partial Class FRM_DANIEL
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(99, 40)
+        TextBox1.Location = New Point(296, 126)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(157, 23)
@@ -48,17 +50,41 @@ Partial Class FRM_DANIEL
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(346, 89)
+        Label1.Location = New Point(350, 193)
         Label1.Name = "Label1"
         Label1.Size = New Size(41, 15)
         Label1.TabIndex = 3
         Label1.Text = "Label1"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.NavajoWhite
+        Label2.Dock = DockStyle.Fill
+        Label2.Location = New Point(0, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(0, 15)
+        Label2.TabIndex = 4
+        ' 
+        ' Label3
+        ' 
+        Label3.AccessibleRole = AccessibleRole.None
+        Label3.AutoSize = True
+        Label3.BackColor = Color.GreenYellow
+        Label3.BorderStyle = BorderStyle.Fixed3D
+        Label3.Location = New Point(318, 63)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(43, 17)
+        Label3.TabIndex = 5
+        Label3.Text = "Label3"
         ' 
         ' FRM_DANIEL
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox1)
         Controls.Add(Button2)
@@ -70,4 +96,6 @@ Partial Class FRM_DANIEL
     Friend WithEvents Button2 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

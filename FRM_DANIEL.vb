@@ -5,6 +5,14 @@
 
         numero = Val(TextBox1.Text)
 
+        If TextBox1.Text = "" Then
+            MsgBox("Por favor ingrese un número")
+            Exit Sub
+
+        End If
+
+
+
         If numero Mod 2 = 0 Then
             Label1.Text = "el número " & numero & " es par"
         Else
