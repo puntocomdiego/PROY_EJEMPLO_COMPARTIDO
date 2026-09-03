@@ -1,4 +1,11 @@
-﻿Public Class FRM_DANIEL
+﻿
+Imports System.Drawing
+Imports System.Runtime.InteropServices.JavaScript.JSType
+Public Class FRM_DANIEL
+    Dim numero As Integer = 0
+
+
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Dim numero As Integer
@@ -23,6 +30,34 @@
 
 
 
+
+
+
+
+
+    End Sub
+
+    Private Sub FRM_DANIEL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+
+        Dim numero As Integer
+        Dim rojo As Integer
+        Dim verde As Integer
+        Dim azul As Integer
+
+        numero = Random.Shared.Next(0, 16777216)
+
+        rojo = numero Mod 256
+        verde = (numero \ 256) Mod 256
+        azul = (numero \ 65536) Mod 256
+
+        Label3.BackColor = Color.FromArgb(rojo, verde, azul)
 
 
 

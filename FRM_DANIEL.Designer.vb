@@ -22,16 +22,18 @@ Partial Class FRM_DANIEL
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Button2 = New Button()
         TextBox1 = New TextBox()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(318, 222)
+        Button2.Location = New Point(318, 296)
         Button2.Margin = New Padding(3, 2, 3, 2)
         Button2.Name = "Button2"
         Button2.Size = New Size(135, 41)
@@ -41,16 +43,16 @@ Partial Class FRM_DANIEL
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(296, 126)
+        TextBox1.Location = New Point(267, 148)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(157, 23)
+        TextBox1.Size = New Size(258, 23)
         TextBox1.TabIndex = 2
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(350, 193)
+        Label1.Location = New Point(357, 213)
         Label1.Name = "Label1"
         Label1.Size = New Size(41, 15)
         Label1.TabIndex = 3
@@ -70,13 +72,19 @@ Partial Class FRM_DANIEL
         ' 
         Label3.AccessibleRole = AccessibleRole.None
         Label3.AutoSize = True
-        Label3.BackColor = Color.GreenYellow
+        Label3.BackColor = Color.White
         Label3.BorderStyle = BorderStyle.Fixed3D
-        Label3.Location = New Point(318, 63)
+        Label3.Font = New Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = SystemColors.ControlText
+        Label3.Location = New Point(3, 20)
         Label3.Name = "Label3"
-        Label3.Size = New Size(43, 17)
+        Label3.Size = New Size(794, 56)
         Label3.TabIndex = 5
-        Label3.Text = "Label3"
+        Label3.Text = "super proyecto de daniel y tung tung sahur"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Interval = 1
         ' 
         ' FRM_DANIEL
         ' 
@@ -98,4 +106,5 @@ Partial Class FRM_DANIEL
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Timer1 As Timer
 End Class
