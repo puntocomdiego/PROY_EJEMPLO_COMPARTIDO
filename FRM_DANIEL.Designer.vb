@@ -27,7 +27,7 @@ Partial Class FRM_DANIEL
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(303, 120)
+        Button1.Location = New Point(278, 217)
         Button1.Name = "Button1"
         Button1.Size = New Size(204, 94)
         Button1.TabIndex = 0
