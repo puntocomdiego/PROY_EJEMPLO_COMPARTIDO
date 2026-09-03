@@ -28,7 +28,7 @@ Partial Class FRM_NAZA
         ' Button1
         ' 
         Button1.Font = New Font("Tempus Sans ITC", 16.2F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(457, 148)
+        Button1.Location = New Point(449, 154)
         Button1.Name = "Button1"
         Button1.Size = New Size(270, 130)
         Button1.TabIndex = 0
