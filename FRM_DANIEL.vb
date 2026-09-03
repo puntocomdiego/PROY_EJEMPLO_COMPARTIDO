@@ -1,4 +1,7 @@
 ﻿Public Class FRM_DANIEL
+    Private Sub FRM_DANIEL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 
     ' ============================================================
     '  TP: decir si el numero es PAR o IMPAR.
