@@ -17,7 +17,7 @@ Partial Class FRM_HESCTOR
 
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_HESCTOR))
         lblConsigna = New Label()
         lblEntrada = New Label()
         txtEntrada = New TextBox()
@@ -29,17 +29,13 @@ Partial Class FRM_HESCTOR
         ' 
         lblConsigna.BackColor = Color.LightYellow
         lblConsigna.BorderStyle = BorderStyle.FixedSingle
-        lblConsigna.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular)
+        lblConsigna.Font = New Font("Segoe UI", 9.75F)
         lblConsigna.Location = New Point(12, 12)
         lblConsigna.Name = "lblConsigna"
         lblConsigna.Padding = New Padding(8)
         lblConsigna.Size = New Size(776, 135)
         lblConsigna.TabIndex = 0
-        lblConsigna.Text = "TRABAJO PRACTICO - Mayor o Menor de Edad" & vbCrLf & vbCrLf &
-            "El usuario ingresa su edad. Al presionar el boton, mostrar si es MAYOR DE EDAD (18 o mas)" & vbCrLf &
-            "o MENOR DE EDAD. Pintar el resultado de verde si es mayor y de rojo si es menor." & vbCrLf &
-            "Validar que la edad sea un numero valido entre 0 y 120." & vbCrLf &
-            "Pista: usa If edad >= 18 Then ... y la propiedad lblResultado.ForeColor."
+        lblConsigna.Text = resources.GetString("lblConsigna.Text")
         ' 
         ' lblEntrada
         ' 
@@ -47,7 +43,7 @@ Partial Class FRM_HESCTOR
         lblEntrada.Font = New Font("Segoe UI", 11.25F)
         lblEntrada.Location = New Point(90, 190)
         lblEntrada.Name = "lblEntrada"
-        lblEntrada.Size = New Size(120, 20)
+        lblEntrada.Size = New Size(46, 20)
         lblEntrada.TabIndex = 1
         lblEntrada.Text = "Edad:"
         ' 
@@ -80,8 +76,9 @@ Partial Class FRM_HESCTOR
         ' 
         ' FRM_HESCTOR
         ' 
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        ClientSize = New System.Drawing.Size(800, 450)
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
         Controls.Add(lblResultado)
         Controls.Add(btnAccion)
         Controls.Add(txtEntrada)
