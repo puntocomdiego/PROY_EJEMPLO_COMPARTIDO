@@ -3,15 +3,10 @@
 
     End Sub
 
-    ' ============================================================
-    '  TP: decir si el numero es PAR o IMPAR.
-    '  Pista: If (CInt(txtEntrada.Text) Mod 2) = 0 Then ...
-    ' ============================================================
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-    'Private Sub btnAccion_Click(sender As Object, e As EventArgs) Handles btnAccion.Click
+    End Sub
 
-    '    ' TODO (alumno): escribir aqui tu codigo.
-
-    'End Sub
+    '
 
 End Class
