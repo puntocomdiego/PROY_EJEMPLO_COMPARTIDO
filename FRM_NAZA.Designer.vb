@@ -23,21 +23,11 @@ Partial Class FRM_NAZA
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_NAZA))
-        Button1 = New Button()
         txtNombre = New TextBox()
         lblNombre = New Label()
         lblConsigna = New Label()
+        Button1 = New Button()
         SuspendLayout()
-        ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Tempus Sans ITC", 16.2F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(411, 306)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(270, 130)
-        Button1.TabIndex = 0
-        Button1.Text = "Hola"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' txtNombre
         ' 
@@ -69,23 +59,32 @@ Partial Class FRM_NAZA
         lblConsigna.TabIndex = 4
         lblConsigna.Text = resources.GetString("lblConsigna.Text")
         ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(339, 267)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(190, 47)
+        Button1.TabIndex = 7
+        Button1.Text = "Hola"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' FRM_NAZA
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1267, 478)
+        Controls.Add(Button1)
         Controls.Add(txtNombre)
         Controls.Add(lblNombre)
         Controls.Add(lblConsigna)
-        Controls.Add(Button1)
         Name = "FRM_NAZA"
         Text = "FRM_NAZA"
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Button1 As Button
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblConsigna As Label
+    Friend WithEvents Button1 As Button
 End Class
