@@ -23,6 +23,7 @@ Partial Class FRM_TABA
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_TABA))
         lblConsigna = New Label()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
@@ -33,8 +34,21 @@ Partial Class FRM_TABA
         Timer2 = New Timer(components)
         Button2 = New Button()
         Button3 = New Button()
+        Button4 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
+        ' 
+        ' lblConsigna
+        ' 
+        lblConsigna.BackColor = Color.LightYellow
+        lblConsigna.BorderStyle = BorderStyle.FixedSingle
+        lblConsigna.Font = New Font("Segoe UI", 9.75F)
+        lblConsigna.Location = New Point(30, 441)
+        lblConsigna.Name = "lblConsigna"
+        lblConsigna.Padding = New Padding(8)
+        lblConsigna.Size = New Size(121, 10)
+        lblConsigna.TabIndex = 7
+        lblConsigna.Text = resources.GetString("lblConsigna.Text")
         ' 
         ' Label1
         ' 
@@ -45,21 +59,6 @@ Partial Class FRM_TABA
         Label1.Size = New Size(265, 21)
         Label1.TabIndex = 0
         Label1.Text = "Bienvenido al proyecto de Tabaré"
-        ' 
-        ' lblConsigna
-        ' 
-        lblConsigna.BackColor = Color.LightYellow
-        lblConsigna.BorderStyle = BorderStyle.FixedSingle
-        lblConsigna.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular)
-        lblConsigna.Location = New Point(12, 40)
-        lblConsigna.Name = "lblConsigna"
-        lblConsigna.Padding = New Padding(8)
-        lblConsigna.Size = New Size(770, 100)
-        lblConsigna.TabIndex = 7
-        lblConsigna.Text = "TRABAJO PRACTICO - Control de Velocidad" & vbCrLf & vbCrLf &
-            "Tu animacion funciona con el valor de ""Velocidad"". Agregale una VALIDACION al Timer1_Tick:" & vbCrLf &
-            "si el TextBox esta vacio o no es un numero, la velocidad debe tomarse como 1 (no debe romperse)." & vbCrLf &
-            "Extra: no permitir velocidades mayores a 20 ni negativas."
         ' 
         ' PictureBox1
         ' 
@@ -77,6 +76,7 @@ Partial Class FRM_TABA
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 2
+        TextBox1.Text = "1"
         ' 
         ' Timer1
         ' 
@@ -123,12 +123,22 @@ Partial Class FRM_TABA
         Button3.Text = "Abandonarme como la persona despreciable que eres"
         Button3.UseVisualStyleBackColor = True
         ' 
+        ' Button4
+        ' 
+        Button4.Location = New Point(342, 414)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(91, 23)
+        Button4.TabIndex = 8
+        Button4.Text = "SUFICIENTE"
+        Button4.UseVisualStyleBackColor = True
+        ' 
         ' FRM_TABA
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(800, 450)
+        Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(lblConsigna)
@@ -154,4 +164,5 @@ Partial Class FRM_TABA
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class
