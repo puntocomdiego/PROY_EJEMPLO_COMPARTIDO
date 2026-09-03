@@ -22,29 +22,70 @@ Partial Class FRM_NAZA
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_NAZA))
         Button1 = New Button()
+        txtNombre = New TextBox()
+        lblNombre = New Label()
+        lblConsigna = New Label()
         SuspendLayout()
         ' 
         ' Button1
         ' 
         Button1.Font = New Font("Tempus Sans ITC", 16.2F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(449, 154)
+        Button1.Location = New Point(411, 306)
         Button1.Name = "Button1"
         Button1.Size = New Size(270, 130)
         Button1.TabIndex = 0
         Button1.Text = "Hola"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' txtNombre
+        ' 
+        txtNombre.Font = New Font("Segoe UI", 12F)
+        txtNombre.Location = New Point(321, 168)
+        txtNombre.Name = "txtNombre"
+        txtNombre.Size = New Size(280, 34)
+        txtNombre.TabIndex = 6
+        ' 
+        ' lblNombre
+        ' 
+        lblNombre.AutoSize = True
+        lblNombre.Font = New Font("Segoe UI", 12F)
+        lblNombre.Location = New Point(216, 171)
+        lblNombre.Name = "lblNombre"
+        lblNombre.Size = New Size(89, 28)
+        lblNombre.TabIndex = 5
+        lblNombre.Text = "Nombre:"
+        ' 
+        ' lblConsigna
+        ' 
+        lblConsigna.BackColor = Color.LightYellow
+        lblConsigna.BorderStyle = BorderStyle.FixedSingle
+        lblConsigna.Font = New Font("Segoe UI", 9.75F)
+        lblConsigna.Location = New Point(12, 9)
+        lblConsigna.Name = "lblConsigna"
+        lblConsigna.Padding = New Padding(8)
+        lblConsigna.Size = New Size(886, 142)
+        lblConsigna.TabIndex = 4
+        lblConsigna.Text = resources.GetString("lblConsigna.Text")
+        ' 
         ' FRM_NAZA
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1267, 478)
+        Controls.Add(txtNombre)
+        Controls.Add(lblNombre)
+        Controls.Add(lblConsigna)
         Controls.Add(Button1)
         Name = "FRM_NAZA"
         Text = "FRM_NAZA"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents lblNombre As Label
+    Friend WithEvents lblConsigna As Label
 End Class
