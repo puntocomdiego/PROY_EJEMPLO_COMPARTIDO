@@ -27,11 +27,11 @@ Partial Class FRM_DANIEL
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(452, 85)
+        Button1.Location = New Point(303, 120)
         Button1.Name = "Button1"
         Button1.Size = New Size(204, 94)
         Button1.TabIndex = 0
-        Button1.Text = "Button1"
+        Button1.Text = "presioname"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' FRM_DANIEL
