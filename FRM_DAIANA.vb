@@ -11,6 +11,7 @@
         Button1.Visible = False
         Button1.Text = " "
         Button1.Enabled = False
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
