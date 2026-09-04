@@ -1,14 +1,38 @@
 ﻿Public Class FRM_DAIANA
 
-    Dim etapa As Byte
+    Dim etapa As Byte = 1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Button2.BackColor = Color.Blue
+        Button2.ForeColor = Color.White
+        Button2.Visible = True
+
+        Button1.Visible = False
+        Button1.Text = " "
+        Button1.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Button3.BackColor = Color.Red
+        Button3.ForeColor = Color.White
+        Button3.Visible = True
+
+        Button2.Text = " "
+        Button2.Enabled = False
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        Button1.BackColor = Color.Yellow
+        Button1.Visible = True
+
+        Button3.Text = " "
+        Button3.Enabled = False
+
+        Button4.Visible = True
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -20,6 +44,11 @@
                 Panel1.BackColor = Color.Green
                 Panel2.BackColor = Color.Purple
                 Panel3.BackColor = Color.Orange
+
+                Panel1.Visible = True
+                Panel2.Visible = True
+                Panel3.Visible = True
+
 
                 Panel4.Visible = True
                 Panel5.Visible = True
@@ -76,11 +105,17 @@
             Button1.BackColor = SystemColors.Control
             Button2.BackColor = SystemColors.Control
             Button3.BackColor = SystemColors.Control
+
             Button1.Text = "CLICK!"
 
             Button2.Visible = False
             Button3.Visible = False
             etapa = 1
+
+            Button1.Enabled = True
+            Button2.Enabled = True
+            Button3.Enabled = True
+
 
         Catch ex As Exception
 
@@ -99,7 +134,4 @@
 
     End Sub
 
-    Private Sub FRM_DAIANA_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
