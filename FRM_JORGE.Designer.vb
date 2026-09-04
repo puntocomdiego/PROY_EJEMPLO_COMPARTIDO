@@ -17,6 +17,7 @@ Partial Class FRM_JORGE
 
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_JORGE))
         lblConsigna = New Label()
         Button1 = New Button()
         lblContador = New Label()
@@ -26,21 +27,18 @@ Partial Class FRM_JORGE
         ' 
         lblConsigna.BackColor = Color.LightYellow
         lblConsigna.BorderStyle = BorderStyle.FixedSingle
-        lblConsigna.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular)
+        lblConsigna.Font = New Font("Segoe UI", 9.75F)
         lblConsigna.Location = New Point(12, 12)
         lblConsigna.Name = "lblConsigna"
         lblConsigna.Padding = New Padding(8)
-        lblConsigna.Size = New Size(770, 120)
+        lblConsigna.Size = New Size(770, 155)
         lblConsigna.TabIndex = 1
-        lblConsigna.Text = "TRABAJO PRACTICO - Contador de Clicks" & vbCrLf & vbCrLf &
-            "Ya tenes un boton. Ahora hace que cada vez que se presione, sume 1 a un contador" & vbCrLf &
-            "y muestre el total en la etiqueta ""lblContador"" (ej: ""Clicks: 5"")." & vbCrLf &
-            "Pista: declara una variable de clase (Dim cuenta As Integer) FUERA del Sub del boton" & vbCrLf &
-            "para que no se reinicie en cada click."
+        lblConsigna.Text = resources.GetString("lblConsigna.Text")
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(128, 170)
+        Button1.Font = New Font("Segoe UI", 15F)
+        Button1.Location = New Point(12, 332)
         Button1.Name = "Button1"
         Button1.Size = New Size(221, 106)
         Button1.TabIndex = 0
@@ -50,7 +48,7 @@ Partial Class FRM_JORGE
         ' lblContador
         ' 
         lblContador.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
-        lblContador.Location = New Point(400, 190)
+        lblContador.Location = New Point(482, 391)
         lblContador.Name = "lblContador"
         lblContador.Size = New Size(300, 50)
         lblContador.TabIndex = 2
@@ -67,7 +65,6 @@ Partial Class FRM_JORGE
         Name = "FRM_JORGE"
         Text = "FRM_JORGE - Contador de Clicks"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Button1 As Button
