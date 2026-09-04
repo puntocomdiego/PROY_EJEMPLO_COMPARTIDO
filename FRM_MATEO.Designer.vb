@@ -123,7 +123,7 @@ Partial Class FRM_MATEO
         ' 
         Button4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
         Button4.Font = New Font("Segoe UI", 12F)
-        Button4.Location = New Point(498, 250)
+        Button4.Location = New Point(501, 250)
         Button4.Name = "Button4"
         Button4.Size = New Size(86, 50)
         Button4.TabIndex = 9

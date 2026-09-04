@@ -56,7 +56,7 @@
     End Sub
 
     Private Sub txtNum1_GotFocus(sender As Object, e As EventArgs) Handles txtNum1.GotFocus
-        txtNum1.BackColor = Color.Yellow
+        txtNum1.BackColor = Color.LightYellow
     End Sub
 
     Private Sub txtNum1_LostFocus(sender As Object, e As EventArgs) Handles txtNum1.LostFocus
@@ -64,7 +64,7 @@
     End Sub
 
     Private Sub txtNum2_GotFocus(sender As Object, e As EventArgs) Handles txtNum2.GotFocus
-        txtNum2.BackColor = Color.Yellow
+        txtNum2.BackColor = Color.LightYellow
     End Sub
 
     Private Sub txtNum2_LostFocus(sender As Object, e As EventArgs) Handles txtNum2.LostFocus
