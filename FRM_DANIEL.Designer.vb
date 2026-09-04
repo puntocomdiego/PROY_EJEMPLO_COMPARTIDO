@@ -33,28 +33,26 @@ Partial Class FRM_DANIEL
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(318, 296)
-        Button2.Margin = New Padding(3, 2, 3, 2)
+        Button2.Location = New Point(363, 395)
         Button2.Name = "Button2"
-        Button2.Size = New Size(135, 41)
+        Button2.Size = New Size(154, 55)
         Button2.TabIndex = 1
         Button2.Text = "PAR O IMPAR?"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(267, 148)
-        TextBox1.Margin = New Padding(3, 2, 3, 2)
+        TextBox1.Location = New Point(305, 197)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(258, 23)
+        TextBox1.Size = New Size(294, 27)
         TextBox1.TabIndex = 2
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(357, 213)
+        Label1.Location = New Point(408, 284)
         Label1.Name = "Label1"
-        Label1.Size = New Size(41, 15)
+        Label1.Size = New Size(53, 20)
         Label1.TabIndex = 3
         Label1.Text = "Label1"
         ' 
@@ -65,7 +63,7 @@ Partial Class FRM_DANIEL
         Label2.Dock = DockStyle.Fill
         Label2.Location = New Point(0, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(0, 15)
+        Label2.Size = New Size(0, 20)
         Label2.TabIndex = 4
         ' 
         ' Label3
@@ -76,9 +74,9 @@ Partial Class FRM_DANIEL
         Label3.BorderStyle = BorderStyle.Fixed3D
         Label3.Font = New Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = SystemColors.ControlText
-        Label3.Location = New Point(3, 20)
+        Label3.Location = New Point(3, 27)
         Label3.Name = "Label3"
-        Label3.Size = New Size(794, 56)
+        Label3.Size = New Size(978, 69)
         Label3.TabIndex = 5
         Label3.Text = "super proyecto de daniel y tung tung sahur"
         ' 
@@ -88,14 +86,15 @@ Partial Class FRM_DANIEL
         ' 
         ' FRM_DANIEL
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1110, 600)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox1)
         Controls.Add(Button2)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "FRM_DANIEL"
         Text = "FRM_DANIEL"
         ResumeLayout(False)

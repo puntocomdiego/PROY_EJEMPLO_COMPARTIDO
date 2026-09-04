@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblConsigna.Text" xml:space="preserve">
+    <value>TRABAJO PRACTICO - Sumar dos numeros
+
+Hay dos cuadros de texto (txtNum1 y txtNum2). Programa el boton para que sume los dos
+numeros ingresados y muestre el resultado en la etiqueta "lblResultado".
+Validar con IsNumeric que ambos sean numeros; si no, mostrar un aviso.
+Extra (opcional): agrega botones para restar, multiplicar y dividir.</value>
+  </data>
 </root>

@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblConsigna.Text" xml:space="preserve">
+    <value>TRABAJO PRACTICO - Contador de Clicks
+
+Ya tenes un boton. Ahora hace que cada vez que se presione, sume 1 a un contador
+y muestre el total en la etiqueta "lblContador" (ej: "Clicks: 5").
+Pista: declara una variable de clase (Dim cuenta As Integer) FUERA del Sub del boton
+para que no se reinicie en cada click.</value>
+  </data>
 </root>
