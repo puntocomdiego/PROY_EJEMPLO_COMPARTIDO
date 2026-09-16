@@ -7,6 +7,11 @@
     ' ============================================================
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("Hello, Diego!")   ' <-- modifica esta linea segun la consigna
+        If txtNombre.Text = "" Then
+            MsgBox("Hola, mundo!")
+        Else
+            MsgBox("Hola, " & txtNombre.Text & "!")
+        End If
+
     End Sub
 End Class
