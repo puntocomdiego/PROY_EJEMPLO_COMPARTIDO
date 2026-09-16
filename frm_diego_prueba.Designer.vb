@@ -27,7 +27,7 @@ Partial Class frm_diego_prueba
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(171, 142)
+        Button1.Location = New Point(276, 133)
         Button1.Name = "Button1"
         Button1.Size = New Size(232, 114)
         Button1.TabIndex = 0
